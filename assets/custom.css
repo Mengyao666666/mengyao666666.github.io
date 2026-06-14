@@ -1,0 +1,89 @@
+/* Light divider under the top header only */
+body > header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08) !important;
+  padding-bottom: 0.8rem !important;
+  margin-bottom: 0.8rem !important;
+}
+
+/* Page title: Introduction / article titles */
+main h1,
+article h1 {
+  font-size: 1.5rem !important;
+  line-height: 1.25 !important;
+  margin-top: 0.4rem !important;
+  margin-bottom: 0.4rem !important;
+
+  border-bottom: none !important;
+  box-shadow: none !important;
+  padding-bottom: 0 !important;
+}
+
+/* If the theme inserts an hr right after the title, hide it */
+main h1 + hr,
+article h1 + hr {
+  display: none !important;
+}
+
+/* Reduce gap between title and first content block */
+main h1 + *,
+article h1 + * {
+  margin-top: 0.5rem !important;
+}
+
+/* Reduce space between top header and page content */
+body > header + * {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+body > main,
+body > article,
+main,
+article {
+  margin-top: 0 !important;
+  padding-top: 0.8rem !important;
+}
+
+/* Move page title closer to the top divider */
+main h1:first-child,
+article h1:first-child,
+h1:first-of-type {
+  margin-top: 0.3rem !important;
+}
+
+/* About page image */
+/* Center the About page image directly */
+img[src="/images/path.jpg"] {
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 70% !important;
+  max-width: 720px !important;
+  border-radius: 12px !important;
+}
+
+/* Center the caption */
+figure {
+  text-align: center !important;
+}
+
+figcaption {
+  text-align: center !important;
+  font-size: 0.9rem !important;
+  color: #777 !important;
+  margin-top: 0.6rem !important;
+}
+
+/* Keep title in place, move the first paragraph closer */
+h1:first-of-type {
+  margin-top: 0 !important;
+  margin-bottom: 0.6rem !important;
+}
+
+h1:first-of-type + p,
+main h1:first-of-type + p,
+article h1:first-of-type + p,
+.prose h1:first-of-type + p {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
