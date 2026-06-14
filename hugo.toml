@@ -1,7 +1,7 @@
 baseURL = 'https://mengyao666666.github.io/'
 languageCode = 'en-us'
 title = 'Mengyao Wang'
-theme = 'ananke'
+theme = 'paper'
 
 [menus]
   [[menus.main]]
@@ -26,3 +26,11 @@ theme = 'ananke'
 
 [pagination]
   pagerSize = 10
+
+[params]
+  color = 'linen'
+  name = 'Mengyao Wang'
+  bio = 'Research notes, projects, and reading archive.'
+  github = 'mengyao666666'
+  rss = true
+  math = true
