@@ -1,0 +1,2 @@
+{{ $href := replace (.Get "href") `\_` "_" }}
+<a href="{{ $href | safeURL }}" target="_blank" rel="noopener noreferrer">{{ .Get "text" }}</a>
